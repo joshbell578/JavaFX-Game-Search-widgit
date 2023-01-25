@@ -11,8 +11,7 @@ public class PrimaryController {
     @FXML
     private TextField searchField;
 
-    @FXML
-    private 
+     
 
     @FXML
     private Button submitButton;
