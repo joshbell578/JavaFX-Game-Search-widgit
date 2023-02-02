@@ -22,7 +22,11 @@
     <HBox>
         <padding><Insets top="40" right="40" bottom="40" left="40"/></padding>
         <!-- Add Search Input Label -->
-        <Label Text="Search : "></Label>
+        <Label Text="Search : ">
+            <font>
+                <Font name="Arial" size="24" ></Font>
+            </font>
+        </Label>
 
         <!-- Add Search Field -->
         <TextField fx:id="SeachField" prefHeight="40" Hbox.hgrow="ALWAYS"
@@ -37,5 +41,10 @@
     </HBox>
     <!-- Add Results Label -->
     <Label fx:id="searchResultsLabel" text="Results: " >
+        <font>
+            <Font name="Arial" size="24" ></Font>
+        </font>
+    </Label>
+    <Label fx:id="searchResults" text="">
     </Label>
 </VBox>
