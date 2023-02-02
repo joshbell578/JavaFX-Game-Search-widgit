@@ -11,6 +11,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.Labeled;
 import javafx.scene.control.TextField;
 import javafx.stage.Window;
 
@@ -52,6 +53,7 @@ public class PrimaryController {
 
         // Make API Call
         String apiResults = makeAPICall(searchText);
+        Labeled searchResults;
         searchResults.setText(apiResults);
 
         // Process the results (as an object)
@@ -59,7 +61,6 @@ public class PrimaryController {
         SearchResults results = new SearchResults();
 
         // Display results
-        api_results = ;
     }
     protected String makeAPICall(String text) {
         String results = "";
