@@ -3,9 +3,9 @@ package com.example;
 
 public class SearchResults {
     //set private fields here
-        private id
+        private int id;
     // Constructor
-    public searchResults() {
+    public void searchResults() {
         id = 0;
     }
 }
