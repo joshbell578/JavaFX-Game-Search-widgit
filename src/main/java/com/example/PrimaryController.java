@@ -18,8 +18,8 @@ import javafx.stage.Window;
 public class PrimaryController {
     @FXML
     private TextField searchField;
-    searchField.setPromptText("Enter search here");
-
+    searchField.setPromptText("Enter search here: ");
+    
     @FXML
     private Label searchResultsLabel;
 
@@ -84,10 +84,11 @@ public class PrimaryController {
     }
     private String fetchContent(String url) throws IOException {
         final int OK = 200;
-        URL url = new URL(uri);
+        String uri;
+		URL url = new URL(uri);
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
-        int responseCode == connection.getResponseCode();
+        int responseCode = connection.getResponseCode();
         if (responseCode == OK) {
             BufferedReader in = new BufferedReader(
                 new InputStreamReader(connection.getInputStream())
@@ -95,6 +96,7 @@ public class PrimaryController {
             String inputLine;
             StringBuffer response = new StringBuffer();
             while ((inputLine = in.readLine()) != null) {
+                StringBuffer reponse;
                 reponse.append(inputLine);
             }
             in.close();
